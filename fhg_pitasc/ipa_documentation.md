@@ -39,24 +39,27 @@ TODO
 
 
 The good solution overview has:
-- [ ] A picture of the workcell and solution
+- [ ] TODO: A picture of the workcell and solution
+- [ ] TODO: Gripper Fingers
 - [ ] A diagram of software and hardware components and their connections
 - [ ] A small description, what is developed, most interesting with this solution and what is it inspired by.
 
 ## Programs
 
-- **[FO][P]** Touch button
-- **[FO][P]** Grip probe plug
-- **[FC][P]** Insert probe plug
-- **[P]** Grab slider
-- **[FO][P]** Move slider
-- **[FC][V]** Open Door
-- **[FO][P]** Pick probe (box)
-- **[FC][P][V]** Place probe (box)
-- **[FO][P]** Pick probe (holder)
-- **[FC][P][V]** Place probe (holder)
-- **[FC][P]** Contact probe
-- **[P]** Cableing
+| Order | Name                 | Force-Controlled? | Position-Controlled? | Velocity-Controlled? |
+|-------|----------------------|-------------------|----------------------|----------------------|
+| 1     | Touch button         | Observed          | x                    | -                    |
+| 2     | Grip probe plug      | Observed          | x                    | -                    |
+| 3     | Insert probe plug    | Controlled        | x                    | -                    |
+| 4     | Grab slider          | -                 | x                    | -                    |
+| 5     | Move slider          | Observed          | x                    | -                    |
+| 6     | Open Door            | Controlled        | -                    | x                    |
+| 7     | Pick probe (box)     | Observed          | x                    | -                    |
+| 8     | Place probe (box)    | Controlled        | x                    | x                    |
+| 9     | Pick probe (holder)  | Observed          | x                    | -                    |
+| 10    | Place probe (holder) | Controlled        | x                    | -                    |
+| 11    | Contact probe        | Controlled        | x                    | -                    |
+| 12    | Cableing             | -                 | x                    | -                    |
 
 ### Hardware dependencies
 
