@@ -10,3 +10,6 @@ Open Items:
 - Format and Structure for this repository (description of partner robot platforms)
 - Develop a simulated environment for evaluating the contributed solutions 
 - Decide for a common Robot Action Planner to ask across the partner robot platforms
+
+
+[Link to Taskboard Trials](https://cloud.kaaiot.com/wd-public/c1v9jqmgul2l1s47m6bg/dashboards/0d2f0e4c-6a80-4cf4-a48d-5b25fcb35ac0/086259d3-7cec-4c52-a3a6-cbf6c9a60820?public_id=4e4990d1-dcab-4f1a-b1a6-8648e87bc5ad)
