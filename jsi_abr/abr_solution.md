@@ -14,9 +14,13 @@
 
 ## Solution overview
 
+A BabyAGI-inspired approach processes initial textual instructions into a robot-executable task list along with a predefined list of valid parameters. 
 
-This sollution is partially based on ideas discussed in *M. Simonič, A. Ude and B. Nemec (2024). "Hierarchical learning of robotic contact policies", Robotics and Computer-Integrated Manufacturing, vol. 86, art. 102657,
+For vision processing, we will use one of state-of-the-art open-set segmentation models.
+
+The execution of robotic tasks is partially based on ideas discussed in *M. Simonič, A. Ude and B. Nemec (2024). "Hierarchical learning of robotic contact policies", Robotics and Computer-Integrated Manufacturing, vol. 86, art. 102657,
 doi: https://doi.org/10.1016/j.rcim.2023.102657.*
+
 
 ### Supported skills
 
@@ -55,7 +59,7 @@ The software architecture is based on modular design described in *M. Simonič, 
 | Azure Kinect ROS driver | [melodic](https://github.com/microsoft/Azure_Kinect_ROS_Driver.git) | Camera support | third-party                                               |
 | libfranka | 0.10.0 | Franka robot control API | third-party
 | Franka Simulink Library |  [0.3.0](https://frankaemika.github.io/docs/franka_matlab) | Simulink libfranka bindings 
-| IJS controllers |  [latest](https://repo.ijs.si/hcr/franka/franka_simulink_controllers) | Custom implementation of cartesian impedance controller allowing arbitrary stiffness frames | internal
+| IJS controllers |  [latest](https://repo.ijs.si/hcr/franka/franka_simulink_controllers) | Custom implementation of cartesian impedance controller allowing arbitrary stiffness frames and joint-level friction compensation | internal
 | Robot Blockset | [latest](https://repo.ijs.si/leon/robotblockset)  | Robot-agnostic library for robot control | internal |
 | Vision module |  TBD | Instance segmentation | internal |
 | Action prediction module | TBD | TBD | internal
