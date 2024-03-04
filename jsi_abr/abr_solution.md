@@ -14,7 +14,7 @@
 
 ## Solution overview
 
-A BabyAGI-inspired approach processes initial textual instructions into a robot-executable task list along with a predefined list of valid parameters. 
+A BabyAGI-inspired approach processes initial textual instructions (i.e. task board completion steps) into a robot-executable task list along with a predefined list of valid parameters. 
 
 For vision processing, we will use one of state-of-the-art open-set segmentation models.
 
@@ -43,8 +43,8 @@ The workcell is based on a modular design described in *P. Radanovič, J. Jereb,
 | Robot         | Franka Research 3                | Franka Desk 5.4.0  | [Link to official site](https://franka.de/research)                          |
 | Gripper       | Standard Franka gripper          | /                                            |                                                                              |
 | Computer      | i7-9700 CPU @ 3.00GHz; 32 GB RAM | Debian GNU Linux 11; 5.10.0-8-rt-amd6 kernel |                                                                              |
-| Camera        | Azure Kinect                     |                                              | [Link to official site](https://azure.microsoft.com/en-us/products/kinect-dk/) |
-|               |                                  |                                              |                                                                              |
+| Overhead camera| Azure Kinect                    |                                             | [Link to official site](https://azure.microsoft.com/en-us/products/kinect-dk/)|
+| In-hand camera| Intel Realsense D435             |                                             | [Link to official site](https://www.intelrealsense.com/depth-camera-d435)    |
 
 ### Software dependencies
 
@@ -57,6 +57,7 @@ The software architecture is based on modular design described in *M. Simonič, 
 | Python | 3.11 | programming language |  
 | ROS  | melodic/noetic | Robot Operating System (ROS) 
 | Azure Kinect ROS driver | [melodic](https://github.com/microsoft/Azure_Kinect_ROS_Driver.git) | Camera support | third-party                                               |
+| Realsense ROS driver | [ros1-legacy](https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy)) | Camera support | third-party                                               |
 | libfranka | 0.10.0 | Franka robot control API | third-party
 | Franka Simulink Library |  [0.3.0](https://frankaemika.github.io/docs/franka_matlab) | Simulink libfranka bindings 
 | IJS controllers |  [latest](https://repo.ijs.si/hcr/franka/franka_simulink_controllers) | Custom implementation of cartesian impedance controller allowing arbitrary stiffness frames and joint-level friction compensation | internal
