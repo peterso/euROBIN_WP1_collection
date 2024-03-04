@@ -1,5 +1,5 @@
-# Learning of skills based on exploiting environmental contraints
-**Table of content:**
+# Learning of skills based on exploiting environmental constraints
+**Table of contents:**
 
 - [Solution overview](#solution-overview)
   * [Supported skills](#supported-skills)
@@ -16,7 +16,7 @@
 
 A BabyAGI-inspired approach processes initial textual instructions (i.e. task board completion steps) into a robot-executable task list along with a predefined list of valid parameters. 
 
-For vision processing, we will use one of state-of-the-art open-set segmentation models.
+For vision processing, we will use one of the state-of-the-art open-set segmentation models.
 
 The execution of robotic tasks is partially based on ideas discussed in *M. Simonič, A. Ude and B. Nemec (2024). "Hierarchical learning of robotic contact policies", Robotics and Computer-Integrated Manufacturing, vol. 86, art. 102657,
 doi: https://doi.org/10.1016/j.rcim.2023.102657.*
@@ -48,7 +48,7 @@ The workcell is based on a modular design described in *P. Radanovič, J. Jereb,
 
 ### Software dependencies
 
-The software architecture is based on modular design described in *M. Simonič, R. Pahič, T. Gašpar, S. Abdolshah, S. Haddadin, M. G. Catalano, F. Wörgötter and A. Ude. “Modular ROS-based software architecture for reconfigurable, Industry 4.0 compatible robotic workcells,” 2021 20th International Conference on Advanced Robotics (ICAR), Ljubljana, Slovenia, 2021, pp. 44-51, doi: 10.1109/ICAR53236.2021.9659378.*
+The software architecture is based on a modular design described in *M. Simonič, R. Pahič, T. Gašpar, S. Abdolshah, S. Haddadin, M. G. Catalano, F. Wörgötter and A. Ude. “Modular ROS-based software architecture for reconfigurable, Industry 4.0 compatible robotic workcells,” 2021 20th International Conference on Advanced Robotics (ICAR), Ljubljana, Slovenia, 2021, pp. 44-51, doi: 10.1109/ICAR53236.2021.9659378.*
 
 
 | Name | Version | What | Note  |
