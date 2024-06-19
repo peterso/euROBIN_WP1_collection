@@ -5,9 +5,9 @@
   * [Software dependencies](#software-dependencies)
 - [How to run](#how-to-run)
 - [How to log data](#how-to-log-data)
+- [Citation](#citation)
 - [Authors](#authors)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Solution Overview
 This solution is adapted from the winning team from the Robothon 2023 competition RoboPig.
@@ -16,11 +16,13 @@ This solution uses a UR5e robot with a Robotiq HAND-E gripper with rubber finger
 
 A command line tool is provided to add new robot waypoints to memory. 
 
-The good solution overview has:
-- [ ] A picture of the workcell and solution
-- [ ] A diagram of software and hardware components and their connections
-- [ ] A small description, what is developed, most interesting with this solution and what is it inspired by.
+A video of the solution can be viewed on [YouTube](https://youtu.be/6Rn9_H7Msdc?si=LZ-QHxw4isQYxyQ9)
 
+A picture of the robot work cell.
+![robot work cell](./assets/pngs/ur5e-task-board-setup.png)
+
+A diagram of software and hardware components and their connections
+![system architecture](./assets/pngs/robot-system-architecture.png)
 
 ## Hardware Dependencies
 
@@ -35,12 +37,10 @@ Tables generated with [tablesgenerator.com](https://www.tablesgenerator.com/mark
 
 
 ## Software Dependencies
-The good software depenency list has:
-- [ ] Listed all packages, software etc. needed to run the solution!
-- [ ] Version or git commit used in project
-- [ ] Link to where/how it can be aquired
 
 ### UR5e Pendant Settings
+Before attempting to run any programs with the robot, set the system parameters on the teach pendant to match the following:
+```
 TCP
     X 0mm
     Y 0mm
@@ -55,6 +55,7 @@ Payload
         CX 0mm
         CY 0mm
         CZ 59mm
+```
 
 ### How to install dependencies
 ***ROS-Melodic***
