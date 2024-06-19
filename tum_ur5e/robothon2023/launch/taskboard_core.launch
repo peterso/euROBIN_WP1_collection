@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<launch>
+  <param name="json_filename" type="string" value="tf2.json"/>
+  
+  <rosparam>
+    /camera/rgb_camera/auto_exposure_priority: false
+    /camera/rgb_camera/backlight_compensation: false
+    /camera/rgb_camera/brightness: -18
+    /camera/rgb_camera/contrast: 37
+    /camera/rgb_camera/enable_auto_exposure: false
+    /camera/rgb_camera/enable_auto_white_balance: false
+    /camera/rgb_camera/exposure: 220
+    /camera/rgb_camera/frames_queue_size: 16
+    /camera/rgb_camera/gain: 20
+    /camera/rgb_camera/gamma: 124
+    /camera/rgb_camera/global_time_enabled: true
+    /camera/rgb_camera/saturation: 50
+    /camera/rgb_camera/sharpness: 100
+  </rosparam>
+  <!--
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch">
+    <arg name="color_fps"     value="30"/>
+    <arg name="color_height"  value="1080"/>
+    <arg name="color_width"   value="1920"/>
+    <arg name="enable_depth"   value="true"/>
+  </include> 
+   
+  <node name="ids_node" pkg="robothon2023" type="robothon2023_ids_node" /> 
+
+  <node name="triangle_detection" pkg="robothon2023" type="triangle_lab.py" output="screen"/>
+
+  <node name="board_detection" pkg="robothon2023" type="board_detection.py" output="screen"/>
+  
+  -->
+
+  <include file="$(find ur_ros_driver)/launch/full_driver.launch" />
+  
+  <node pkg="tf2_ros" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0.148 0 0 0 1 wrist_3_link tcp" />
+  
+  <node name="tf2_publisher" pkg="robothon2023" type="robothon2023_tf2_publisher" output="screen" launch-prefix="bash -c 'sleep 5; $0 $@' " />
+
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find robothon2023)/config/rviz_config.rviz" />
+
+
+</launch>

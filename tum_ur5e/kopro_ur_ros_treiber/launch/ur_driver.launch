@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="ur_ros_driver" type="ur_ros_driver_node" name="ur_ros_node" />
+</launch>

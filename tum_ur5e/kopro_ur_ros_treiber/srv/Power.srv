@@ -1,0 +1,6 @@
+# Input
+# 0 - powerOff
+# 1 - powerOn
+bool IO
+---
+bool success

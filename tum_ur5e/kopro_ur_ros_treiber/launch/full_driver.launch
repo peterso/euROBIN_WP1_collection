@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+     <!-- robot model -->
+    <include file="$(find ur_description)/launch/load_ur5e.launch">
+        <arg name="kinematics_params" value="$(find ur_description)/config/ur5e/default_kinematics.yaml"/>
+    </include>
+
+    <!-- Convert joint states to /tf tranforms -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+    <node pkg="ur_ros_driver" type="ur_ros_driver_node" name="ur_ros_node" output="screen">
+        <param name="robot_ip" type="string" value="172.16.15.10"/>
+    </node>
+    <!-- Load controller settings -->
+    <rosparam file="$(find ur_ros_driver)/config/ur5e_controllers.yaml" command="load"/>
+
+    <!-- spawn controller manager -->
+    <node name="ros_control_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+        output="screen" args="joint_state_controller" />
+        
+</launch>
