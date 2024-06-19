@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find ur_ros_driver)/launch/full_driver.launch" />
+
+  <param name="json_filename" type="string" value="tf2.json"/>
+  <node name="tf2_publisher" pkg="robothon2023" type="robothon2023_tf2_publisher" output="screen" launch-prefix="bash -c 'sleep 5; $0 $@' "/>
+  
+  <node name="touchDetection" pkg="robothon2023" type="robothon2023_touch_detect" output="screen" launch-prefix="bash -c 'sleep 7; $0 $@' "/>
+</launch>
