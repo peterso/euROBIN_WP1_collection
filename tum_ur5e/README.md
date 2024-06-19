@@ -57,6 +57,21 @@ Payload
         CZ 59mm
 
 ### How to install dependencies
+***ROS-Melodic***
+https://wiki.ros.org/melodic
+
+***opencv***
+`pip install opencv-python`
+
+***cv_bridge***
+`pip install cv-bridge`
+
+***numpy***
+`pip install numpy`
+
+***rospy***
+`pip install roslibpy`
+
 ***json***
 `sudo apt install nlohmann-json3-dev`
 
@@ -77,16 +92,6 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr ..
 make -j
 sudo make install
 ```
-
-
-| Name          | Version / git commit / placement in repository                                  | What                                                 | Note (Third-party, commercial, homemade etc.) |
-|---------------|---------------------------------------------------------------------------------|------------------------------------------------------|-----------------------------------------------|
-| Python3       | [3.6.0 ](https://www.python.org/downloads/release/python-360/)                                                                          | General-purpose programming language                 | Third-party                                   |
-| Numpy         | [1.24.3](https://pypi.org/project/numpy/1.24.3/)                                | Python array computing                               | Third-party                                   |
-| opencv        | [4.7.0.72](https://pypi.org/project/opencv-python/4.7.0.72/)                    | Computer vision                                      | Third-party                                   |
-| ROS2          | [Foxy Fitzroy](https://docs.ros.org/en/foxy/Releases/Release-Foxy-Fitzroy.html) | Robot Operating System (ROS), set of robot libraries | Third-party                                   |
-| Vision module | [Link to module]()                                                              | Control of vision                                    | Homemade                                      |
-|               |                                                                                 |                                                      |                                               |
 
 
 ## How to run
@@ -115,6 +120,9 @@ Run the following commands in the provided order to run the task board demo with
 After each run change filname in first call_log() in task_board_scheduler.cpp.
 This logging solution will be improved to use the current date timestamp to avoid this step in the future.
 
+
+## Citation
+Kranz, Philipp & Ali, Usama & Mueller, Adrian & Hornauer, Maximilian & Loeser, Martin & Sukkar, Fouad & Willert, Volker & Kaupp, Tobias. (2023). Towards Recycling E-Waste Using Vision and Robotic Manipulation. [ResearchGate](https://www.researchgate.net/publication/376267145_Towards_Recycling_E-Waste_Using_Vision_and_Robotic_Manipulation)
 
 ## Authors
 Peter So, [Github](https://github.com/peterso/), [LinkedIn](https://www.linkedin.com/in/peterso/), [peter.so@tum.de](mailto:peter.so@tum.de)
