@@ -1,4 +1,4 @@
-# Robothon Grand-Challenge documentation template
+# Electronic Task Board Solution v2023 (TUM)
 **Table of content:**
 - [Solution overview](#solution-overview)
   * [Hardware dependencies](#hardware-dependencies)
@@ -19,14 +19,15 @@ A command line tool is provided to add new robot waypoints to memory.
 A video of the solution can be viewed on [YouTube](https://youtu.be/6Rn9_H7Msdc?si=LZ-QHxw4isQYxyQ9)
 
 A picture of the robot work cell.
+
 ![robot work cell](./assets/png/ur5e-task-board-setup.png)
 
-A diagram of software and hardware components and their connections
+A diagram of software and hardware components and their connections.
+
 ![system architecture](./assets/png/robot-system-architecture.png)
 
 ## Hardware Dependencies
 
-Tables generated with [tablesgenerator.com](https://www.tablesgenerator.com/markdown_tables):
 | Hardware type     | Model              | OS/Driver version | Note/Picture                                                                                          |
 |-------------------|--------------------|-------------------|-----------------------------------------------------------------------------------------------|
 | Robot Arm         | Universal Robots - UR5e | SW 5.13.1         | [Link for official site](https://www.universal-robots.com/products/ur5-robot/)                |
@@ -59,28 +60,28 @@ Payload
 ```
 
 ### How to install dependencies
-***ROS-Melodic***
+- ***ROS-Melodic***
 https://wiki.ros.org/melodic
 
-***opencv***
+- ***opencv***
 `pip install opencv-python`
 
-***cv_bridge***
+- ***cv_bridge***
 `pip install cv-bridge`
 
-***numpy***
+- ***numpy***
 `pip install numpy`
 
-***rospy***
+- ***rospy***
 `pip install roslibpy`
 
-***json***
+- ***json***
 `sudo apt install nlohmann-json3-dev`
 
-***cgal***
+- ***cgal***
 `sudo apt install libcgal-dev`
 
-***ur-rtde***
+- ***ur-rtde***
 https://sdurobotics.gitlab.io/ur_rtde/installation.html#linux-ubuntu-and-macos
 
 ```
