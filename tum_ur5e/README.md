@@ -19,10 +19,10 @@ A command line tool is provided to add new robot waypoints to memory.
 A video of the solution can be viewed on [YouTube](https://youtu.be/6Rn9_H7Msdc?si=LZ-QHxw4isQYxyQ9)
 
 A picture of the robot work cell.
-![robot work cell](./assets/pngs/ur5e-task-board-setup.png)
+![robot work cell](./assets/png/ur5e-task-board-setup.png)
 
 A diagram of software and hardware components and their connections
-![system architecture](./assets/pngs/robot-system-architecture.png)
+![system architecture](./assets/png/robot-system-architecture.png)
 
 ## Hardware Dependencies
 
@@ -30,9 +30,10 @@ Tables generated with [tablesgenerator.com](https://www.tablesgenerator.com/mark
 | Hardware type     | Model              | OS/Driver version | Note/Picture                                                                                          |
 |-------------------|--------------------|-------------------|-----------------------------------------------------------------------------------------------|
 | Robot Arm         | Universal Robots - UR5e | SW 5.13.1         | [Link for official site](https://www.universal-robots.com/products/ur5-robot/)                |
-| 3D printed hook   | Custom made        | N/A               | [Link for CAD](https://sketchfab.com/3d-models/robotic-hand-3e284b06bbb84d858f85f7a246cd65df) |
-| Computer          | ThinkPad p51       | ubuntu 20.04.6    |                                                                                               |
-| Camera            | Intel RS d435i     | RS Driver         |                                                                                               |
+| Cable Hook        | 3D Printed         | N/A               | [Link for STL](./assets/stl/RoboPig_CableHook.stl) |
+| Hook Stand        | 3D Printed         | N/A               | [Link for STL](./assets/stl/RoboPig_CableHookHolder.stl) |
+| Computer          | ThinkPad T15       | ubuntu 20.04.6    |                                                                                               |
+| Camera            | Intel RS D435i     | RS Driver         |                                                                                               |
 | Gripper           | Robottiq HAND-E    | UR Cap            |                                                                                               |
 
 
